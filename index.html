@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的个人主页 | GitHub Pages</title>
+    <meta
+      name="description"
+      content="一个简洁现代的个人主页模板，适合部署到 GitHub Pages。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <a class="brand" href="#top">你的名字</a>
+        <div class="nav-links">
+          <a href="#about">关于我</a>
+          <a href="#projects">项目</a>
+          <a href="#contact">联系</a>
+        </div>
+      </nav>
+
+      <section class="hero-content container" id="top">
+        <p class="tag">👋 你好，我是</p>
+        <h1>一名热爱产品与代码的创作者</h1>
+        <p class="subtitle">
+          我专注于前端开发、自动化与效率工具。这里是我的线上名片，欢迎交流合作。
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">查看项目</a>
+          <a class="btn ghost" href="mailto:you@example.com">发送邮件</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section container" id="about">
+        <h2>关于我</h2>
+        <p>
+          你可以在这里写：你是谁、擅长什么、目前在做什么。建议 3~5
+          句话，保持简洁，突出个人特点。
+        </p>
+        <div class="chips">
+          <span>JavaScript / TypeScript</span>
+          <span>React / Vue</span>
+          <span>Node.js</span>
+          <span>AI Workflow</span>
+        </div>
+      </section>
+
+      <section class="section container" id="projects">
+        <h2>精选项目</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>项目 A</h3>
+            <p>一句话介绍项目价值，例如“帮助团队节省 30% 的手工操作时间”。</p>
+            <a href="#" target="_blank" rel="noreferrer">查看详情 →</a>
+          </article>
+          <article class="card">
+            <h3>项目 B</h3>
+            <p>描述你负责的关键工作、技术栈和成果，尽量量化。</p>
+            <a href="#" target="_blank" rel="noreferrer">查看详情 →</a>
+          </article>
+          <article class="card">
+            <h3>项目 C</h3>
+            <p>可以替换为博客、开源仓库、作品集链接等内容。</p>
+            <a href="#" target="_blank" rel="noreferrer">查看详情 →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="contact">
+        <h2>联系我</h2>
+        <p>欢迎通过以下方式联系我：</p>
+        <ul class="contact-list">
+          <li>Email：<a href="mailto:you@example.com">you@example.com</a></li>
+          <li>GitHub：<a href="https://github.com/yourname">@yourname</a></li>
+          <li>微信公众号 / 小红书 / 即刻：你的账号</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> 你的名字 · Built with GitHub Pages</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
